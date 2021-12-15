@@ -133,7 +133,7 @@ ImageLabel_2.ScaleType = Enum.ScaleType.Tile
 
 -- Scripts:
 
-local function UKKLE_fake_script() -- ImageButton.LocalScript 
+local function WCDCPTN_fake_script() -- ImageButton.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -141,8 +141,8 @@ local function UKKLE_fake_script() -- ImageButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(UKKLE_fake_script)()
-local function GAFLZ_fake_script() -- ImageLabel.LocalScript 
+coroutine.wrap(WCDCPTN_fake_script)()
+local function LEABUH_fake_script() -- ImageLabel.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel)
 
 	
@@ -220,8 +220,8 @@ local function GAFLZ_fake_script() -- ImageLabel.LocalScript
 	
 	
 end
-coroutine.wrap(GAFLZ_fake_script)()
-local function DGKR_fake_script() -- ImageLabel.LocalScript 
+coroutine.wrap(LEABUH_fake_script)()
+local function QDKKF_fake_script() -- ImageLabel.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel)
 
 	while true do
@@ -239,16 +239,16 @@ local function DGKR_fake_script() -- ImageLabel.LocalScript
 		wait(.7)
 	end
 end
-coroutine.wrap(DGKR_fake_script)()
-local function AYCD_fake_script() -- CloseButton.LocalScript 
+coroutine.wrap(QDKKF_fake_script)()
+local function MBEHQFK_fake_script() -- CloseButton.LocalScript 
 	local script = Instance.new('LocalScript', CloseButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(AYCD_fake_script)()
-local function UBTXLKC_fake_script() -- CloseButton.ANIME 
+coroutine.wrap(MBEHQFK_fake_script)()
+local function OYVLMDO_fake_script() -- CloseButton.ANIME 
 	local script = Instance.new('LocalScript', CloseButton)
 
 	local btn = script.Parent
@@ -291,8 +291,8 @@ local function UBTXLKC_fake_script() -- CloseButton.ANIME
 		end
 	end)
 end
-coroutine.wrap(UBTXLKC_fake_script)()
-local function CCWUL_fake_script() -- Button2.ANIME 
+coroutine.wrap(OYVLMDO_fake_script)()
+local function ANPGG_fake_script() -- Button2.ANIME 
 	local script = Instance.new('LocalScript', Button2)
 
 	local btn = script.Parent
@@ -335,14 +335,17 @@ local function CCWUL_fake_script() -- Button2.ANIME
 		end
 	end)
 end
-coroutine.wrap(CCWUL_fake_script)()
-local function CGZWSV_fake_script() -- Button2.METAB SCRIPT 
+coroutine.wrap(ANPGG_fake_script)()
+local function TNHFG_fake_script() -- Button2.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button2)
 
 	script.Parent.MouseButton1Down:connect(function()
 		
 	
 		game:GetService"RunService".RenderStepped:Connect(function()
+			
+			game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.GameService.WeaponAttackStart:FireServer()
+	
 	
 			local UwU = game.Players.LocalPlayer.Character.HumanoidRootPart
 			for i,v in pairs(game.workspace.NPC.Gnomes.Gnome:GetChildren()) do
@@ -356,8 +359,8 @@ local function CGZWSV_fake_script() -- Button2.METAB SCRIPT
 	
 	
 end
-coroutine.wrap(CGZWSV_fake_script)()
-local function HMAV_fake_script() -- Button2_2.ANIME 
+coroutine.wrap(TNHFG_fake_script)()
+local function IKXH_fake_script() -- Button2_2.ANIME 
 	local script = Instance.new('LocalScript', Button2_2)
 
 	local btn = script.Parent
@@ -400,8 +403,8 @@ local function HMAV_fake_script() -- Button2_2.ANIME
 		end
 	end)
 end
-coroutine.wrap(HMAV_fake_script)()
-local function VOAE_fake_script() -- Button2_2.METAB SCRIPT 
+coroutine.wrap(IKXH_fake_script)()
+local function MNCZSPO_fake_script() -- Button2_2.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button2_2)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -434,11 +437,11 @@ local function VOAE_fake_script() -- Button2_2.METAB SCRIPT
 	
 	
 end
-coroutine.wrap(VOAE_fake_script)()
-local function BHBJX_fake_script() -- ImageLabel_2.Script 
+coroutine.wrap(MNCZSPO_fake_script)()
+local function ZESQOGR_fake_script() -- ImageLabel_2.Script 
 	local script = Instance.new('Script', ImageLabel_2)
 
 	wait(4)
 	script.Parent:Destroy()
 end
-coroutine.wrap(BHBJX_fake_script)()
+coroutine.wrap(ZESQOGR_fake_script)()
