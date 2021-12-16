@@ -133,7 +133,7 @@ ImageLabel_2.ScaleType = Enum.ScaleType.Tile
 
 -- Scripts:
 
-local function KXQYCUW_fake_script() -- ImageButton.LocalScript 
+local function HWEM_fake_script() -- ImageButton.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -141,8 +141,8 @@ local function KXQYCUW_fake_script() -- ImageButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(KXQYCUW_fake_script)()
-local function ROYR_fake_script() -- ImageLabel.LocalScript 
+coroutine.wrap(HWEM_fake_script)()
+local function RMEY_fake_script() -- ImageLabel.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel)
 
 	
@@ -220,8 +220,8 @@ local function ROYR_fake_script() -- ImageLabel.LocalScript
 	
 	
 end
-coroutine.wrap(ROYR_fake_script)()
-local function XMKF_fake_script() -- ImageLabel.LocalScript 
+coroutine.wrap(RMEY_fake_script)()
+local function WPDP_fake_script() -- ImageLabel.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel)
 
 	while true do
@@ -239,16 +239,16 @@ local function XMKF_fake_script() -- ImageLabel.LocalScript
 		wait(.7)
 	end
 end
-coroutine.wrap(XMKF_fake_script)()
-local function VOUX_fake_script() -- CloseButton.LocalScript 
+coroutine.wrap(WPDP_fake_script)()
+local function WUTTRMC_fake_script() -- CloseButton.LocalScript 
 	local script = Instance.new('LocalScript', CloseButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(VOUX_fake_script)()
-local function ZXQRSGJ_fake_script() -- CloseButton.ANIME 
+coroutine.wrap(WUTTRMC_fake_script)()
+local function KMVKA_fake_script() -- CloseButton.ANIME 
 	local script = Instance.new('LocalScript', CloseButton)
 
 	local btn = script.Parent
@@ -291,8 +291,8 @@ local function ZXQRSGJ_fake_script() -- CloseButton.ANIME
 		end
 	end)
 end
-coroutine.wrap(ZXQRSGJ_fake_script)()
-local function LSLK_fake_script() -- Button2.ANIME 
+coroutine.wrap(KMVKA_fake_script)()
+local function QJROISE_fake_script() -- Button2.ANIME 
 	local script = Instance.new('LocalScript', Button2)
 
 	local btn = script.Parent
@@ -335,32 +335,86 @@ local function LSLK_fake_script() -- Button2.ANIME
 		end
 	end)
 end
-coroutine.wrap(LSLK_fake_script)()
-local function GKORE_fake_script() -- Button2.METAB SCRIPT 
+coroutine.wrap(QJROISE_fake_script)()
+local function UOVHKR_fake_script() -- Button2.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button2)
 
 	script.Parent.MouseButton1Down:connect(function()
 		
 	
-		game:GetService"RunService".RenderStepped:Connect(function()
-			wait(1)
-			game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.GameService.WeaponAttackStart:FireServer()
 	
-	wait(1)
-			local UwU = game.Players.LocalPlayer.Character.HumanoidRootPart
-			for i,v in pairs(game.workspace.NPC.Gnomes.Gnome:GetChildren()) do
-				UwU.CFrame = v.CFrame
+	
+	
+	
+	
+	script.Parent.MouseButton1Down:connect(function()
+	
+	
+		toggle = false
+		script.Parent.MouseButton1Down:connect(function()
+	
+			if toggle == true then 
+				toggle = false 
+			else
+				toggle = true
 			end
-			end)
+			if toggle == true then 
+				script.Parent.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+			end
+			if toggle == false then 
+				script.Parent.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+			end
+	
+			if toggle == true then
+	
+					_G.Bin = true
+					while _G.Bin do	
+						local LocalPlayer = game:GetService("Players").LocalPlayer
+						for index, player in pairs(game:GetService("Players"):GetPlayers()) do
+							function teleport()
+								player.Character.HumanoidRootPart.CFrame = game.workspace.NPC.Gnomes.Gnome.HumanoidRootPart.CFrame
+							end
+							pcall(teleport)
+							wait()
+							game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.GameService.WeaponAttackStart:FireServer()
+						end
+					end
+	
+			end
+			if toggle == false then 
+	
+	
+	
+	
+					_G.Bin = false
+					while _G.Bin do	
+						local LocalPlayer = game:GetService("Players").LocalPlayer
+						for index, player in pairs(game:GetService("Players"):GetPlayers()) do
+							function teleport()
+								player.Character.HumanoidRootPart.CFrame = game.workspace.NPC.Gnomes.Gnome.HumanoidRootPart.CFrame
+							end
+							pcall(teleport)
+							wait()
+							game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.GameService.WeaponAttackStart:FireServer()
+						end
+					end
+	
+				end
+				end)
+		end)
 		end)
 	
 	
 	
 	
 	
+	
+	
+	
+	
 end
-coroutine.wrap(GKORE_fake_script)()
-local function LPFMJ_fake_script() -- Button2_2.ANIME 
+coroutine.wrap(UOVHKR_fake_script)()
+local function ICQZB_fake_script() -- Button2_2.ANIME 
 	local script = Instance.new('LocalScript', Button2_2)
 
 	local btn = script.Parent
@@ -403,8 +457,8 @@ local function LPFMJ_fake_script() -- Button2_2.ANIME
 		end
 	end)
 end
-coroutine.wrap(LPFMJ_fake_script)()
-local function DIFRV_fake_script() -- Button2_2.METAB SCRIPT 
+coroutine.wrap(ICQZB_fake_script)()
+local function OQPR_fake_script() -- Button2_2.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button2_2)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -468,11 +522,11 @@ local function DIFRV_fake_script() -- Button2_2.METAB SCRIPT
 	
 	
 end
-coroutine.wrap(DIFRV_fake_script)()
-local function NFETOG_fake_script() -- ImageLabel_2.Script 
+coroutine.wrap(OQPR_fake_script)()
+local function WGQPKA_fake_script() -- ImageLabel_2.Script 
 	local script = Instance.new('Script', ImageLabel_2)
 
 	wait(4)
 	script.Parent:Destroy()
 end
-coroutine.wrap(NFETOG_fake_script)()
+coroutine.wrap(WGQPKA_fake_script)()
